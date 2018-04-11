@@ -1,0 +1,370 @@
+{
+  "100": {
+    "message": "Resource not found",
+    "messageDE": "Resource nicht gefunden",
+    "status": 404
+  },
+  "101": {
+    "message": "No resource entity matching body property filter found",
+    "messageDE": "Keine zu den Body-Parametern passende Resource gefunden",
+    "status": 404
+  },
+  "102": {
+    "message": "No resource entity matching query string filter found",
+    "messageDE": "Keine zu den Query-Parametern passende Resoruce gefunden",
+    "status": 404
+  },
+  "110": {
+    "message": "Method not allowed",
+    "messageDE": "Methode nicht erlaubt",
+    "status": 405
+  },
+  "112": {
+    "message": "Somebody else changed the resource",
+    "messageDE": "Resource wurde von jemand anderem verändert",
+    "status": 412
+  },
+  "150": {
+    "message": "Error in Remote API",
+    "messageDE": "Fehler in Remote-API",
+    "status": 400
+  },
+  "200": {
+    "message": "Missing body",
+    "messageDE": "Fehlender Body",
+    "status": 400
+  },
+  "201": {
+    "message": "Missing property in JSON body",
+    "messageDE": "Fehlender Parameter im JSON Body",
+    "status": 400
+  },
+  "202": {
+    "message": "Missing property in query string",
+    "messageDE": "Fehlender Parameter im Query-String",
+    "status": 400
+  },
+  "203": {
+    "message": "Missing file in upload",
+    "missingDE": "Fehlende Datei im Upload",
+    "status": 400
+  },
+  "204": {
+    "message": "Missing HAL link or embed in JSON body",
+    "messageDE": "Fehlender HAL Link oder eingebettete Resource",
+    "status": 400
+  },
+  "211": {
+    "message": "Invalid format for property in JSON body",
+    "messageDE": "Fehlerhaftes format für JSON Body Parameter",
+    "status": 400
+  },
+  "212": {
+    "message": "Invalid format for property in query string",
+    "messageDE": "Fehlerhaftes format für Query-String Parameter",
+    "status": 400
+  },
+  "213": {
+    "message": "Invalid file format in upload",
+    "messageDE": "Fehlerhaftes Dateiformat im Upload",
+    "status": 400
+  },
+  "214": {
+    "message": "Invalid linked or embedded HAL resource in JSON body, or link not found",
+    "messageDE": "Fehlerhafte verlinkte oder eingebettete HAL Resrouce im JSON Body, oder Linkt nicht gefunden",
+    "status": 400
+  },
+  "215": {
+    "message": "Resource cannot be sorted after given property",
+    "messageDE": "Resource kann nicht mit übergebenem Parameter sortiert werden",
+    "status": 400
+  },
+  "216": {
+    "message": "Resource cannot be filtered with given property",
+    "messageDE": "Resource kann nicht mit übergebenem Parameter gefiltert werden",
+    "status": 400
+  },
+  "217": {
+    "message": "Resource cannot be range-filtered with given property",
+    "messageDE": "Resource kann nicht mit übergebenem Parameter bereichs-gefiltert werden",
+    "status": 400
+  },
+  "251": {
+    "message": "Password is too short (min. 4 characters)",
+    "messageDE": "Passwort zu kurt (min. 4 Zeichen)",
+    "status": 400
+  },
+  "252": {
+    "message": "Unmatched validation error",
+    "messageDE": "Nicht abgefangener Validierungsfehler",
+    "status": 400
+  },
+  "253": {
+    "message": "Invalid asset to merge",
+    "messageDE": "Fehlerhaftes Asset zum Zusammenführen",
+    "status": 400
+  },
+  "254": {
+    "message": "Exceeded maximum levels for nested request.",
+    "messadeDE": "Zulässige Tiefe für nested Request überschitten",
+    "status": 400
+  },
+  "255": {
+    "message": "Could not get nested resources.",
+    "messageDE": "Konnte eingebettete Resource nicht laden",
+    "status": 400
+  },
+  "256": {
+    "message": "Could not create download file.",
+    "messageDE": "Konnte Download Datei nicht erstellen",
+    "status": 400
+  },
+  "311": {
+    "message": "Invalid value for property in JSON body",
+    "messageDE": "Fehlerhaftes Wert für Parameter im JSON Body",
+    "status": 400
+  },
+  "351": {
+    "message": "eMail address is unavailable",
+    "messageDE": "E-Mail-Adresse nicht verfügbar",
+    "status": 403
+  },
+  "352": {
+    "message": "Cannot delete openID connection",
+    "messageDE": "Kann openID Verbindung nicht löschen",
+    "status": 403
+  },
+  "353": {
+    "message": "Duplicate model/assetgroup in same data manager",
+    "messageDE": "Doppeltes Model/doppelte Asset Group im gleichen DataManager",
+    "status": 403
+  },
+  "354": {
+    "message": "Cannot delete model, has entries",
+    "messageDE": "Kann Model nicht löschen, hat Entries",
+    "status": 403
+  },
+  "355": {
+    "message": "Cannot delete model, mandatory model",
+    "message": "Kann Model nicht löschen, zwingend notwendig",
+    "status": 403
+  },
+  "356": {
+    "message": "Cannot change Model, has Entries.",
+    "messageDE": "Kann Model nicht ändern, hat Entries",
+    "status": 403
+  },
+  "357": {
+    "message": "Model must support default locale",
+    "messageDE": "Model muss standart Localisierung unterstützen",
+    "status": 400
+  },
+  "358": {
+    "message": "Unsupported locale",
+    "messageDE": "Nicht unterstützte Localisierung",
+    "status": 400
+  },
+  "359": {
+    "message": "Violates unique constraint",
+    "messageDE": "Verletzt Einzigartigkeit",
+    "status": 400
+  },
+  "360": {
+    "message": "Cannot delete entry. Referenced as required.",
+    "messageDE": "Kann Entry nicht löschen. Als erforderlich referenziert",
+    "status": 400
+  },
+  "361": {
+    "message": "Cannot change entry. Read Only.",
+    "messageDE": "Kann entry nicht ändern. Ist Schreibgeschützt",
+    "status": 403
+  },
+  "362": {
+    "message": "Cannot change entry. Reference not allowed due to type validation.",
+    "messageDE": "Kann Entry nicht ändern. Referenz nicht erlaubt, fehlerhafte Typ-Validierung",
+    "status": 400
+  },
+  "363": {
+    "message": "Cannot change Model, edit of mandatory/unmutable field.",
+    "messageDE": "Kann Model nicht ändern. Änderung von Systemfeldern nicht erlaubt",
+    "status": 403
+  },
+  "364": {
+    "message": "Cannot change Model, reserved field title.",
+    "messageDE": "Kann Model nicht ändern. Reservierter Feldname",
+    "status": 400
+  },
+  "365": {
+    "message": "Cannot change Model, duplicate model title.",
+    "messageDE": "Kann Model nicht ändern. Doppelter Model name",
+    "status": 400
+  },
+  "366": {
+    "message": "Duplicate field name in model.",
+    "messageDE": "Doppelter Feldname im Model.",
+    "status": 400
+  },
+  "367": {
+    "message": "Field cannot be unique and localizable.",
+    "messageDE": "Feld kann nicht gleichzeitig einzigartig und lokalisierbar sein",
+    "status": 400
+  },
+  "368": {
+    "message": "Field of type boolean must be required.",
+    "messageDE": "Felder mit typ Boolean müssen erforderlich sein",
+    "status": 400
+  },
+  "369": {
+    "message": "Title field not a field in the model.",
+    "messageDE": "Titelfeld nicht als Feld im Model gefunden",
+    "status": 400
+  },
+  "370": {
+    "message": "Cannot delete resource. Is used.",
+    "messageDE": "Kann Resource nicht löschen, wird verwendet",
+    "status": 403
+  },
+  "371": {
+    "message": "Cannot change entry. Reference not found.",
+    "messageDE": "Kann Entry nicht ändern. Referenz nicht gefunden",
+    "status": 400
+  },
+  "372": {
+    "message": "Required field must have a default value set.",
+    "messageDE": "Erforderliche Felder müssen Standartwert gesetzt haben.",
+    "status": 400
+  },
+  "373": {
+    "message": "Other parallel request already added tag(s)",
+    "messageDE": "Anderer paralleler Request hat Tag schon bearbeitet",
+    "status": 400
+  },
+  "374": {
+    "message": "Cannot export datamanager. Required field in model has no default value.",
+    "messageDE": "Kann DataManager nicht exportieren. Erforderliches Feld in Model hat keinen Standartwert",
+    "status": 400
+  },
+  "375": {
+    "message": "A duplicate asset already exists in this AssetGroup. Set `ignoreDuplicates` flag to ignore. No assets were uploaded.",
+    "messageDE": "Ein gleiches Asset existiert bereits in dieser AssetGroup. Zum Ignorieren `ignoreDuplicates` flag setzten. Kein Asset wurde Hochgeladen",
+    "status": 400
+  },
+  "376": {
+    "message": "A duplicate asset filename already exists in this AssetGroup. Remove `preserveFilenames` flag to use a random filename. No assets were uploaded.",
+    "messageDE": "Ein Asset mit gleichem Dateinamen existiert bereits in dieser AssetGroup. `preserveFilenames` flag entfernen um zufälligen Dateinamen zu verwenden. Kein Asset wurde Hochgeladen",
+    "status": 400
+  },
+  "400": {
+    "message": "Missing Access Token",
+    "messageDE": "Fehlender Access Token",
+    "status": 401
+  },
+  "401": {
+    "message": "Invalid Access Token",
+    "messageDE": "Fehlerhafter Access Token",
+    "status": 401
+  },
+  "402": {
+    "message": "Outdated Access Token",
+    "messageDE": "Access Token abgelaufen",
+    "status": 401
+  },
+  "403": {
+    "message": "Invalid Password",
+    "messageDE": "Falsches Passwort",
+    "status": 401
+  },
+  "404": {
+    "message": "Account not found (unknown email address)",
+    "messageDE": "Account nicht gefunden (unbekannte E-Mail-Adresse)",
+    "status": 404
+  },
+  "410": {
+    "message": "Insufficient rights to access the requested resource",
+    "messageDE": "Keine Berechtigung die angeforderte Resource zu laden",
+    "status": 401
+  },
+  "411": {
+    "message": "Insufficient rights to access the requested resource with this method",
+    "messageDE": "Keine Berechtigung die angeforderte Resource mit dieser Methode zu laden",
+    "status": 405
+  },
+  "444": {
+    "message": "Denied because of stupidity",
+    "messageDE": "http://www.nichtlustig.de/toondb/040816.html",
+    "status": 403
+  },
+  "451": {
+    "message": "Too many wrong login attempts, please wait",
+    "messageDE": "Zu viele Login-Versuche. Bitte warten",
+    "status": 429
+  },
+  "452": {
+    "message": "User blocked",
+    "messageDE": "Benutzer blokiert",
+    "status": 403
+  },
+  "453": {
+    "message": "Invalid invite",
+    "messageDE": "Fehlerhafte Einladung",
+    "status": 403
+  },
+  "460": {
+    "message": "Generic OAuth Error",
+    "messageDE": "Allgemeint OAuth Fehler",
+    "status": 400
+  },
+  "461": {
+    "message": "Facebook OAuth Request failed",
+    "messageDE": "Facebook OAuth fehlgeschlagen",
+    "status": 400
+  },
+  "462": {
+    "message": "Facebook API call failed to receive eMail address",
+    "messageDE": "Facebook Request konnte E-Mail-Adresse nicht laden",
+    "status": 400
+  },
+  "470": {
+    "message": "Target resource does not fulfill permission policy conditions",
+    "messageDE": "Resource erfüllt Bedingung für Berechtigung nicht",
+    "status": 403
+  },
+  "471": {
+    "message": "Property cannot be written due to permission policy restrictions",
+    "messageDE": "Parameter kann nicht geschrieben werden auf grund von eingeschränkter Richtlinie",
+    "status": 403
+  },
+  "472": {
+    "message": "Error while processing asset file",
+    "messageDE": "Fehler beim bearbeiten der Datei",
+    "status": 400
+  },
+  "473": {
+    "message": "Error running template",
+    "messageDE": "Fehler beim Ausführen der Template",
+    "status": 400
+  },
+  "500": {
+    "message": "Missing plan for this product",
+    "messageDE": "Fehlender Vertrag für dieses Produkt",
+    "status": 403
+  },
+  "510": {
+    "message": "Insufficient plan for this product",
+    "messageDE": "Vertrag umfasst dieses Produkt nicht",
+    "status": 403
+  },
+  "511": {
+    "message": "Insufficient plan for creation",
+    "messageDE": "Kann dies im aktuellen Vertrag nicht erstellen",
+    "status": 403
+  },
+  "003": {
+    "message": "Service currently unavailable",
+    "status": 503
+  },
+  "000": {
+    "message": "Internal Error",
+    "status": 500
+  }
+}

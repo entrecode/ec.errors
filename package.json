@@ -1,0 +1,30 @@
+{
+  "name": "ec.errors",
+  "version": "0.1.0",
+  "description": "Module for error codes used by all entrecode products. By entrecode.",
+  "main": "index.js",
+  "scripts": {
+    "coverage": "istanbul cover ./node_modules/mocha/bin/_mocha -- --exit -R dot --recursive && open ./coverage/lcov-report/index.html",
+    "docs": "documentation build index.js -c documentation.yml -f html -o docs",
+    "test": "mocha -R spec --exit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/entrecode/ec.errors.git"
+  },
+  "author": "Simon Scherzinger <scherzinger@entrecode.de>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/entrecode/ec.errors/issues"
+  },
+  "homepage": "https://github.com/entrecode/ec.errors#readme",
+  "dependencies": {
+    "config": "^1.30.0"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "documentation": "^6.1.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^5.0.5"
+  }
+}

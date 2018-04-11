@@ -1,0 +1,393 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset='utf-8' />
+  <title>ec.errors 0.1.0 | Documentation</title>
+  <meta name='viewport' content='width=device-width,initial-scale=1'>
+  <link href='assets/bass.css' type='text/css' rel='stylesheet' />
+  <link href='assets/style.css' type='text/css' rel='stylesheet' />
+  <link href='assets/github.css' type='text/css' rel='stylesheet' />
+  <link href='assets/split.css' type='text/css' rel='stylesheet' />
+</head>
+<body class='documentation m0'>
+    <div class='flex'>
+      <div id='split-left' class='overflow-auto fs0 height-viewport-100'>
+        <div class='py1 px2'>
+          <h3 class='mb0 no-anchor'>ec.errors</h3>
+          <div class='mb1'><code>0.1.0</code></div>
+          <input
+            placeholder='Filter'
+            id='filter-input'
+            class='col12 block input'
+            type='text' />
+          <div id='toc'>
+            <ul class='list-reset h5 py1-ul'>
+              
+                
+                <li><a
+                  href='#getting-started'
+                  class="h5 bold black caps">
+                  Getting Started
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#api-doc'
+                  class="h5 bold black caps">
+                  API Doc
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#newerror'
+                  class="">
+                  newError
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#convertvalidationerror'
+                  class="">
+                  convertValidationError
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#getlocalised'
+                  class="">
+                  getLocalised
+                  
+                </a>
+                
+                </li>
+              
+            </ul>
+          </div>
+          <div class='mt1 h6 quiet'>
+            <a href='http://documentation.js.org/reading-documentation.html'>Need help reading this?</a>
+          </div>
+        </div>
+      </div>
+      <div id='split-right' class='relative overflow-auto height-viewport-100'>
+        
+          
+            <div class='keyline-top-not py2'><section class='py2 clearfix'>
+
+  <h2 id='getting-started' class='mt0'>
+    Getting Started
+  </h2>
+
+  
+    <h1>ec.errors</h1>
+<blockquote>
+<p>Module for error codes used by all entrecode products. By entrecode.</p>
+</blockquote>
+<h2>Installation</h2>
+<pre class='hljs'>npm i --save ec.errors</pre>
+<h2>Basic Usage</h2>
+<pre class='hljs'><span class="hljs-comment">// …</span>
+<span class="hljs-keyword">const</span> { newError } = <span class="hljs-built_in">require</span>(<span class="hljs-string">'ec.errors'</span>);
+<span class="hljs-comment">// …</span>
+
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">myFunction</span>(<span class="hljs-params">input</span>) </span>{
+  <span class="hljs-keyword">if</span> (input !== <span class="hljs-string">'valid'</span>) { <span class="hljs-comment">// or maybe a little more logic</span>
+    <span class="hljs-keyword">throw</span> newError(<span class="hljs-number">211</span>, <span class="hljs-string">'input'</span>, <span class="hljs-string">`Input must not be '<span class="hljs-subst">${input}</span>', only 'valid' is allowed.`</span>);
+  }
+
+  <span class="hljs-keyword">return</span> doSomethingWith(input);
+}
+
+myFunction(<span class="hljs-string">'invalid'</span>);</pre>
+<h2>Configuration</h2>
+<p>This module uses Loren Wests <a href="https://github.com/lorenwest/node-config">node-config</a> for configuration. If you want to change the configuration follow the guide from node-config and put your configs into <code>ecErrors</code>.</p>
+<p>It has the following configuration options (and their defaults):</p>
+<pre class='hljs'><span class="hljs-attr">errorCodeSystemIdentifier:</span> <span class="hljs-number">9</span><span class="hljs-string">,</span>
+<span class="hljs-attr">logging:</span> <span class="hljs-literal">false</span><span class="hljs-string">,</span>
+<span class="hljs-attr">locale:</span> <span class="hljs-string">''</span><span class="hljs-string">,</span>
+<span class="hljs-attr">convertValidationErrorAsArray:</span> <span class="hljs-literal">false</span><span class="hljs-string">,</span></pre>
+<h2>Changelog</h2>
+<h3>v0.1.0</h3>
+<ul>
+<li>initial version published from private module ec.appcms-node-util</li>
+<li>newError(code, detail, verbose) and convertValidationError(tv4Result)</li>
+</ul>
+
+  
+</section>
+</div>
+          
+        
+          
+            <div class='keyline-top-not py2'><section class='py2 clearfix'>
+
+  <h2 id='api-doc' class='mt0'>
+    API Doc
+  </h2>
+
+  
+    
+
+  
+</section>
+</div>
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='newerror'>
+      newError
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Helper Function to produce an error object containing message and HTTP status code.</p>
+
+
+  <div class='pre p1 fill-light mt0'>newError(code: (int | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>?), detail: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>?, verbose: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>?): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Error">Error</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>code</span> <code class='quiet'>((int | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>?)
+            = <code>&#39;000&#39;</code>)</code>
+	    internal error code without system identifier (three digits).
+Can also be an integer (when not 000…).
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>detail</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>?
+            = <code>&#39;&#39;</code>)</code>
+	    subject the error concerns.
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>verbose</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>?
+            = <code>&#39;&#39;</code>)</code>
+	    even more information about the error.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Error">Error</a></code>:
+        An JavaScript Error instance.
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='convertvalidationerror'>
+      convertValidationError
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Converts an Error of tini validator into entrecode error format.</p>
+
+
+  <div class='pre p1 fill-light mt0'>convertValidationError(tv4Result: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Error">Error</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>tv4Result</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>)</code>
+	    Error from tini validator.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Error">Error</a></code>:
+        Mapped error in entrecode format.
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='getlocalised'>
+      getLocalised
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Create a localized version of any given entrecode error.</p>
+
+
+  <div class='pre p1 fill-light mt0'>getLocalised(error: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Error">Error</a>, locale: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>?): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Error">Error</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>error</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Error">Error</a>)</code>
+	    Error in entrecode error format.
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>locale</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>?
+            = <code>config.get(&#39;ecErrors.locale&#39;)</code>)</code>
+	    Two character localization (currently only 'de' supported).
+Leave blank for english.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Error">Error</a></code>:
+        localized entrecode error.
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+      </div>
+    </div>
+  <script src='assets/anchor.js'></script>
+  <script src='assets/split.js'></script>
+  <script src='assets/site.js'></script>
+</body>
+</html>
