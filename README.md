@@ -40,6 +40,12 @@ convertValidationErrorAsArray: false,
 ```
 ## Changelog
 
+### v0.1.1
+
+* fix: fixed error array conversion in mapTV4Error
+
 ### v0.1.0
+
 * initial version published from private module ec.appcms-node-util
-* newError(code, detail, verbose) and convertValidationError(tv4Result)
+* feat: newError(code, detail, verbose) for error creation
+* feat: convertValidationError(tv4Result) for mapping tv4 validation errors into entrecode style errors
