@@ -47,8 +47,7 @@ function mapTV4Error(error) {
   if (error.code === 0 || error.code === 1 || error.code === 500 || error.code === 400
     || (error.code > 99 && error.code < 299)
     || (error.code === 11 && error.subErrors[0].code > 99 && error.subErrors[0].code < 299)
-    // invalid format
-    || (error.code === 11 && error.subErrors.length > 0 && error.subErrors[0].code === 0)) {
+    || (error.code === 11 && error.subErrors[0].code === 0)) {
     // special case password to short
     if (error.dataPath.match(/^\/(\w*)[Pp]assword/)) {
       return newError(251, error.message, error.dataPath);
@@ -81,7 +80,7 @@ function convertValidationError(tv4Result) {
   }
 
   if (!config.get('ecErrors.convertValidationErrorAsArray')) {
-    const mainError = error.unshift();
+    const mainError = error.shift();
     Object.assign(mainError, {
       subErrors: error,
     });
