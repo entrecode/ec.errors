@@ -38,7 +38,12 @@ logging: false,
 locale: '',
 convertValidationErrorAsArray: false,
 ```
+
 ## Changelog
+
+### v0.1.2
+
+* feat: adds typings
 
 ### v0.1.1
 
