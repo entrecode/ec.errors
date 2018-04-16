@@ -1,13 +1,9 @@
-process.env.SUPPRESS_NO_CONFIG_WARNING = 'y';
-const config = require('config');
-
-const defaultConfig = {
+const config = {
   errorCodeSystemIdentifier: 9,
   logging: false,
   locale: '',
   convertValidationErrorAsArray: false,
 };
-config.util.setModuleDefaults('ecErrors', defaultConfig);
 
 const errorCodes = require('./errorCodes.json');
 
@@ -28,7 +24,7 @@ function newError(code = '000', detail = '', verbose = '') {
     detail,
     verbose,
     codeWithoutSystemID: code,
-    code: parseInt(`${config.get('ecErrors.errorCodeSystemIdentifier')}${code}`, 10),
+    code: parseInt(`${config.errorCodeSystemIdentifier}${code}`, 10),
   });
   return error;
 }
@@ -55,7 +51,7 @@ function mapTV4Error(error) {
     return newError(211, error.dataPath.replace(/^\//, ''), error.message);
   }
 
-  if (config.get('ecErrors.logging')) {
+  if (config.logging) {
     /* eslint-disable-next-line no-console */
     console.error('Unmatched Validation Error');
     /* eslint-disable-next-line no-console */
@@ -79,7 +75,7 @@ function convertValidationError(tv4Result) {
     error.push(mapTV4Error(tv4Result.errors[j]));
   }
 
-  if (!config.get('ecErrors.convertValidationErrorAsArray')) {
+  if (!config.convertValidationErrorAsArray) {
     const mainError = error.shift();
     Object.assign(mainError, {
       subErrors: error,
@@ -98,7 +94,7 @@ function convertValidationError(tv4Result) {
  *   Leave blank for english.
  * @returns {Error} localized entrecode error.
  */
-function getLocalised(error, locale = config.get('ecErrors.locale')) {
+function getLocalised(error, locale = config.locale) {
   if (`message${locale.toUpperCase()}` in errorCodes[error.codeWithoutSystemID]) {
     Object.assign(error, {
       message: errorCodes[error.codeWithoutSystemID][`message${locale.toUpperCase()}`],
@@ -119,8 +115,12 @@ function getLocalised(error, locale = config.get('ecErrors.locale')) {
   return error;
 }
 
-module.exports = {
-  newError,
-  convertValidationError,
-  getLocalised,
+module.exports = (cfg) => {
+  Object.assign(config, cfg);
+
+  return {
+    newError,
+    convertValidationError,
+    getLocalised,
+  };
 };

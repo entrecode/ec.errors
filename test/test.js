@@ -5,7 +5,7 @@ const validator = require('json-schema-remote');
 
 const { expect } = chai;
 
-const util = require('../');
+const util = require('../')();
 
 describe('newError', () => {
   it('should return valid error', (done) => {
