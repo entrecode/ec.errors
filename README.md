@@ -41,6 +41,10 @@ convertValidationErrorAsArray: false,
 
 ## Changelog
 
+### v0.1.3
+
+* fix: load errorCodes with file extension, should fix webpack build
+
 ### v0.1.2
 
 * feat: adds typings

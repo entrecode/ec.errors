@@ -9,7 +9,7 @@ const defaultConfig = {
 };
 config.util.setModuleDefaults('ecErrors', defaultConfig);
 
-const errorCodes = require('./errorCodes');
+const errorCodes = require('./errorCodes.json');
 
 /**
  * Helper Function to produce an error object containing message and HTTP status code.
