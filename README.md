@@ -12,7 +12,7 @@ npm i --save ec.errors
 
 ```js
 // …
-const { newError } = require('ec.errors');
+const { newError } = require('ec.errors')(myConfig);
 // …
 
 function myFunction(input) {
@@ -28,9 +28,7 @@ myFunction('invalid');
 
 ## Configuration
 
-This module uses Loren Wests [node-config](https://github.com/lorenwest/node-config) for configuration. If you want to change the configuration follow the guide from node-config and put your configs into `ecErrors`.
-
-It has the following configuration options (and their defaults):
+This module has the following configuration options (and their defaults). In order to overwrite with your own config pass an object to the require call.
 
 ```yaml
 errorCodeSystemIdentifier: 9,
@@ -41,15 +39,19 @@ convertValidationErrorAsArray: false,
 
 ## Changelog
 
-### v0.1.3
+### v0.2.0
+* removed `node-config`
+* switched to module factory style module to support frontend transpilation
+
+#### v0.1.3
 
 * fix: load errorCodes with file extension, should fix webpack build
 
-### v0.1.2
+#### v0.1.2
 
 * feat: adds typings
 
-### v0.1.1
+#### v0.1.1
 
 * fix: fixed error array conversion in mapTV4Error
 

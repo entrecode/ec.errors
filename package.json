@@ -1,6 +1,6 @@
 {
   "name": "ec.errors",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "description": "Module for error codes used by all entrecode products. By entrecode.",
   "main": "index.js",
   "types": "./index.d.ts",
@@ -19,9 +19,7 @@
     "url": "https://github.com/entrecode/ec.errors/issues"
   },
   "homepage": "https://github.com/entrecode/ec.errors#readme",
-  "dependencies": {
-    "config": "^1.30.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "chai": "^4.1.2",
     "documentation": "^6.1.0",
