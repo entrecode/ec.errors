@@ -2,3 +2,8 @@ toc:
   - name: Getting Started
     file: ./README.md
   - name: API Doc
+  - newError
+  - convertValidationError
+  - getLocalised
+  - name: Impressum & Datenschutz
+    file: ./privacy.md
