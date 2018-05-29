@@ -95,17 +95,22 @@ function convertValidationError(tv4Result) {
  * @returns {Error} localized entrecode error.
  */
 function getLocalised(error, locale = config.locale) {
-  if (`message${locale.toUpperCase()}` in errorCodes[error.codeWithoutSystemID]) {
+  let code3 = `${error.code % 1000}`;
+  while (code3.length < 3) {
+    code3 = `0${code3}`;
+  }
+
+  if (`message${locale.toUpperCase()}` in errorCodes[code3]) {
     Object.assign(error, {
-      message: errorCodes[error.codeWithoutSystemID][`message${locale.toUpperCase()}`],
+      message: errorCodes[code3][`message${locale.toUpperCase()}`],
     });
   }
   if ('subErrors' in error) {
     Object.assign(error, {
       subErrors: error.subErrors.map((e) => {
-        if (`message${locale.toUpperCase()}` in errorCodes[e.codeWithoutSystemID]) {
+        if (`message${locale.toUpperCase()}` in errorCodes[code3]) {
           Object.assign(e, {
-            message: errorCodes[e.codeWithoutSystemID][`message${locale.toUpperCase()}`],
+            message: errorCodes[code3][`message${locale.toUpperCase()}`],
           });
         }
         return e;
