@@ -6,6 +6,7 @@
   "types": "./index.d.ts",
   "scripts": {
     "coverage": "istanbul cover ./node_modules/mocha/bin/_mocha -- --exit -R dot --recursive && open ./coverage/lcov-report/index.html",
+    "predocs": "node generate-markdown.js",
     "docs": "documentation build index.js -c documentation.yml -f html -o docs",
     "test": "mocha -R spec --exit"
   },

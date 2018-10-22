@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset='utf-8' />
-  <title>ec.errors 0.2.0 | Documentation</title>
+  <title>ec.errors 0.2.2 | Documentation</title>
   <meta name='viewport' content='width=device-width,initial-scale=1'>
   <link href='assets/bass.css' type='text/css' rel='stylesheet' />
   <link href='assets/style.css' type='text/css' rel='stylesheet' />
@@ -14,7 +14,7 @@
       <div id='split-left' class='overflow-auto fs0 height-viewport-100'>
         <div class='py1 px2'>
           <h3 class='mb0 no-anchor'>ec.errors</h3>
-          <div class='mb1'><code>0.2.0</code></div>
+          <div class='mb1'><code>0.2.2</code></div>
           <input
             placeholder='Filter'
             id='filter-input'
@@ -28,6 +28,16 @@
                   href='#getting-started'
                   class="h5 bold black caps">
                   Getting Started
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#error-codes'
+                  class="h5 bold black caps">
+                  Error codes
                   
                 </a>
                 
@@ -150,6 +160,485 @@ myFunction(<span class="hljs-string">'invalid'</span>);</pre>
 <li>feat: newError(code, detail, verbose) for error creation</li>
 <li>feat: convertValidationError(tv4Result) for mapping tv4 validation errors into entrecode style errors</li>
 </ul>
+
+  
+</section>
+</div>
+          
+        
+          
+            <div class='keyline-top-not py2'><section class='py2 clearfix'>
+
+  <h2 id='error-codes' class='mt0'>
+    Error codes
+  </h2>
+
+  
+    <h1>Error Codes</h1>
+<table>
+<thead>
+<tr>
+<th>code</th>
+<th>message</th>
+<th>message (de)</th>
+<th>status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>100</td>
+<td>Resource not found</td>
+<td>Resource nicht gefunden</td>
+<td>404</td>
+</tr>
+<tr>
+<td>101</td>
+<td>No resource entity matching body property filter found</td>
+<td>Keine zu den Body-Parametern passende Resource gefunden</td>
+<td>404</td>
+</tr>
+<tr>
+<td>102</td>
+<td>No resource entity matching query string filter found</td>
+<td>Keine zu den Query-Parametern passende Resoruce gefunden</td>
+<td>404</td>
+</tr>
+<tr>
+<td>110</td>
+<td>Method not allowed</td>
+<td>Methode nicht erlaubt</td>
+<td>405</td>
+</tr>
+<tr>
+<td>112</td>
+<td>Somebody else changed the resource</td>
+<td>Resource wurde von jemand anderem verändert</td>
+<td>412</td>
+</tr>
+<tr>
+<td>150</td>
+<td>Error in Remote API</td>
+<td>Fehler in Remote-API</td>
+<td>400</td>
+</tr>
+<tr>
+<td>200</td>
+<td>Missing body</td>
+<td>Fehlender Body</td>
+<td>400</td>
+</tr>
+<tr>
+<td>201</td>
+<td>Missing property in JSON body</td>
+<td>Fehlender Parameter im JSON Body</td>
+<td>400</td>
+</tr>
+<tr>
+<td>202</td>
+<td>Missing property in query string</td>
+<td>Fehlender Parameter im Query-String</td>
+<td>400</td>
+</tr>
+<tr>
+<td>203</td>
+<td>Missing file in upload</td>
+<td>undefined</td>
+<td>400</td>
+</tr>
+<tr>
+<td>204</td>
+<td>Missing HAL link or embed in JSON body</td>
+<td>Fehlender HAL Link oder eingebettete Resource</td>
+<td>400</td>
+</tr>
+<tr>
+<td>211</td>
+<td>Invalid format for property in JSON body</td>
+<td>Fehlerhaftes format für JSON Body Parameter</td>
+<td>400</td>
+</tr>
+<tr>
+<td>212</td>
+<td>Invalid format for property in query string</td>
+<td>Fehlerhaftes format für Query-String Parameter</td>
+<td>400</td>
+</tr>
+<tr>
+<td>213</td>
+<td>Invalid file format in upload</td>
+<td>Fehlerhaftes Dateiformat im Upload</td>
+<td>400</td>
+</tr>
+<tr>
+<td>214</td>
+<td>Invalid linked or embedded HAL resource in JSON body, or link not found</td>
+<td>Fehlerhafte verlinkte oder eingebettete HAL Resrouce im JSON Body, oder Linkt nicht gefunden</td>
+<td>400</td>
+</tr>
+<tr>
+<td>215</td>
+<td>Resource cannot be sorted after given property</td>
+<td>Resource kann nicht mit übergebenem Parameter sortiert werden</td>
+<td>400</td>
+</tr>
+<tr>
+<td>216</td>
+<td>Resource cannot be filtered with given property</td>
+<td>Resource kann nicht mit übergebenem Parameter gefiltert werden</td>
+<td>400</td>
+</tr>
+<tr>
+<td>217</td>
+<td>Resource cannot be range-filtered with given property</td>
+<td>Resource kann nicht mit übergebenem Parameter bereichs-gefiltert werden</td>
+<td>400</td>
+</tr>
+<tr>
+<td>251</td>
+<td>Password is too short (min. 4 characters)</td>
+<td>Passwort zu kurt (min. 4 Zeichen)</td>
+<td>400</td>
+</tr>
+<tr>
+<td>252</td>
+<td>Unmatched validation error</td>
+<td>Nicht abgefangener Validierungsfehler</td>
+<td>400</td>
+</tr>
+<tr>
+<td>253</td>
+<td>Invalid asset to merge</td>
+<td>Fehlerhaftes Asset zum Zusammenführen</td>
+<td>400</td>
+</tr>
+<tr>
+<td>254</td>
+<td>Exceeded maximum levels for nested request.</td>
+<td>undefined</td>
+<td>400</td>
+</tr>
+<tr>
+<td>255</td>
+<td>Could not get nested resources.</td>
+<td>Konnte eingebettete Resource nicht laden</td>
+<td>400</td>
+</tr>
+<tr>
+<td>256</td>
+<td>Could not create download file.</td>
+<td>Konnte Download Datei nicht erstellen</td>
+<td>400</td>
+</tr>
+<tr>
+<td>311</td>
+<td>Invalid value for property in JSON body</td>
+<td>Fehlerhaftes Wert für Parameter im JSON Body</td>
+<td>400</td>
+</tr>
+<tr>
+<td>351</td>
+<td>eMail address is unavailable</td>
+<td>E-Mail-Adresse nicht verfügbar</td>
+<td>403</td>
+</tr>
+<tr>
+<td>352</td>
+<td>Cannot delete openID connection</td>
+<td>Kann openID Verbindung nicht löschen</td>
+<td>403</td>
+</tr>
+<tr>
+<td>353</td>
+<td>Duplicate model/assetgroup in same data manager</td>
+<td>Doppeltes Model/doppelte Asset Group im gleichen DataManager</td>
+<td>403</td>
+</tr>
+<tr>
+<td>354</td>
+<td>Cannot delete model, has entries</td>
+<td>Kann Model nicht löschen, hat Entries</td>
+<td>403</td>
+</tr>
+<tr>
+<td>355</td>
+<td>Kann Model nicht löschen, zwingend notwendig</td>
+<td>undefined</td>
+<td>403</td>
+</tr>
+<tr>
+<td>356</td>
+<td>Cannot change Model, has Entries.</td>
+<td>Kann Model nicht ändern, hat Entries</td>
+<td>403</td>
+</tr>
+<tr>
+<td>357</td>
+<td>Model must support default locale</td>
+<td>Model muss standart Localisierung unterstützen</td>
+<td>400</td>
+</tr>
+<tr>
+<td>358</td>
+<td>Unsupported locale</td>
+<td>Nicht unterstützte Localisierung</td>
+<td>400</td>
+</tr>
+<tr>
+<td>359</td>
+<td>Violates unique constraint</td>
+<td>Verletzt Einzigartigkeit</td>
+<td>400</td>
+</tr>
+<tr>
+<td>360</td>
+<td>Cannot delete entry. Referenced as required.</td>
+<td>Kann Entry nicht löschen. Als erforderlich referenziert</td>
+<td>400</td>
+</tr>
+<tr>
+<td>361</td>
+<td>Cannot change entry. Read Only.</td>
+<td>Kann entry nicht ändern. Ist Schreibgeschützt</td>
+<td>403</td>
+</tr>
+<tr>
+<td>362</td>
+<td>Cannot change entry. Reference not allowed due to type validation.</td>
+<td>Kann Entry nicht ändern. Referenz nicht erlaubt, fehlerhafte Typ-Validierung</td>
+<td>400</td>
+</tr>
+<tr>
+<td>363</td>
+<td>Cannot change Model, edit of mandatory/unmutable field.</td>
+<td>Kann Model nicht ändern. Änderung von Systemfeldern nicht erlaubt</td>
+<td>403</td>
+</tr>
+<tr>
+<td>364</td>
+<td>Cannot change Model, reserved field title.</td>
+<td>Kann Model nicht ändern. Reservierter Feldname</td>
+<td>400</td>
+</tr>
+<tr>
+<td>365</td>
+<td>Cannot change Model, duplicate model title.</td>
+<td>Kann Model nicht ändern. Doppelter Model name</td>
+<td>400</td>
+</tr>
+<tr>
+<td>366</td>
+<td>Duplicate field name in model.</td>
+<td>Doppelter Feldname im Model.</td>
+<td>400</td>
+</tr>
+<tr>
+<td>367</td>
+<td>Field cannot be unique and localizable.</td>
+<td>Feld kann nicht gleichzeitig einzigartig und lokalisierbar sein</td>
+<td>400</td>
+</tr>
+<tr>
+<td>368</td>
+<td>Field of type boolean must be required.</td>
+<td>Felder mit typ Boolean müssen erforderlich sein</td>
+<td>400</td>
+</tr>
+<tr>
+<td>369</td>
+<td>Title field not a field in the model.</td>
+<td>Titelfeld nicht als Feld im Model gefunden</td>
+<td>400</td>
+</tr>
+<tr>
+<td>370</td>
+<td>Cannot delete resource. Is used.</td>
+<td>Kann Resource nicht löschen, wird verwendet</td>
+<td>403</td>
+</tr>
+<tr>
+<td>371</td>
+<td>Cannot change entry. Reference not found.</td>
+<td>Kann Entry nicht ändern. Referenz nicht gefunden</td>
+<td>400</td>
+</tr>
+<tr>
+<td>372</td>
+<td>Required field must have a default value set.</td>
+<td>Erforderliche Felder müssen Standartwert gesetzt haben.</td>
+<td>400</td>
+</tr>
+<tr>
+<td>373</td>
+<td>Other parallel request already added tag(s)</td>
+<td>Anderer paralleler Request hat Tag schon bearbeitet</td>
+<td>400</td>
+</tr>
+<tr>
+<td>374</td>
+<td>Cannot export datamanager. Required field in model has no default value.</td>
+<td>Kann DataManager nicht exportieren. Erforderliches Feld in Model hat keinen Standartwert</td>
+<td>400</td>
+</tr>
+<tr>
+<td>375</td>
+<td>A duplicate asset already exists in this AssetGroup. Set 
+<code>ignoreDuplicates</code>
+ flag to ignore. No assets were uploaded.</td>
+<td>Ein gleiches Asset existiert bereits in dieser AssetGroup. Zum Ignorieren 
+<code>ignoreDuplicates</code>
+ flag setzten. Kein Asset wurde Hochgeladen</td>
+<td>400</td>
+</tr>
+<tr>
+<td>376</td>
+<td>A duplicate asset filename already exists in this AssetGroup. Remove 
+<code>preserveFilenames</code>
+ flag to use a random filename. No assets were uploaded.</td>
+<td>Ein Asset mit gleichem Dateinamen existiert bereits in dieser AssetGroup. 
+<code>preserveFilenames</code>
+ flag entfernen um zufälligen Dateinamen zu verwenden. Kein Asset wurde Hochgeladen</td>
+<td>400</td>
+</tr>
+<tr>
+<td>400</td>
+<td>Missing Access Token</td>
+<td>Fehlender Access Token</td>
+<td>401</td>
+</tr>
+<tr>
+<td>401</td>
+<td>Invalid Access Token</td>
+<td>Fehlerhafter Access Token</td>
+<td>401</td>
+</tr>
+<tr>
+<td>402</td>
+<td>Outdated Access Token</td>
+<td>Access Token abgelaufen</td>
+<td>401</td>
+</tr>
+<tr>
+<td>403</td>
+<td>Invalid Password</td>
+<td>Falsches Passwort</td>
+<td>401</td>
+</tr>
+<tr>
+<td>404</td>
+<td>Account not found (unknown email address)</td>
+<td>Account nicht gefunden (unbekannte E-Mail-Adresse)</td>
+<td>404</td>
+</tr>
+<tr>
+<td>410</td>
+<td>Insufficient rights to access the requested resource</td>
+<td>Keine Berechtigung die angeforderte Resource zu laden</td>
+<td>401</td>
+</tr>
+<tr>
+<td>411</td>
+<td>Insufficient rights to access the requested resource with this method</td>
+<td>Keine Berechtigung die angeforderte Resource mit dieser Methode zu laden</td>
+<td>405</td>
+</tr>
+<tr>
+<td>444</td>
+<td>Denied because of stupidity</td>
+<td><a href="http://www.nichtlustig.de/toondb/040816.html">http://www.nichtlustig.de/toondb/040816.html</a></td>
+<td>403</td>
+</tr>
+<tr>
+<td>451</td>
+<td>Too many wrong login attempts, please wait</td>
+<td>Zu viele Login-Versuche. Bitte warten</td>
+<td>429</td>
+</tr>
+<tr>
+<td>452</td>
+<td>User blocked</td>
+<td>Benutzer blokiert</td>
+<td>403</td>
+</tr>
+<tr>
+<td>453</td>
+<td>Invalid invite</td>
+<td>Fehlerhafte Einladung</td>
+<td>403</td>
+</tr>
+<tr>
+<td>460</td>
+<td>Generic OAuth Error</td>
+<td>Allgemeint OAuth Fehler</td>
+<td>400</td>
+</tr>
+<tr>
+<td>461</td>
+<td>Facebook OAuth Request failed</td>
+<td>Facebook OAuth fehlgeschlagen</td>
+<td>400</td>
+</tr>
+<tr>
+<td>462</td>
+<td>Facebook API call failed to receive eMail address</td>
+<td>Facebook Request konnte E-Mail-Adresse nicht laden</td>
+<td>400</td>
+</tr>
+<tr>
+<td>470</td>
+<td>Target resource does not fulfill permission policy conditions</td>
+<td>Resource erfüllt Bedingung für Berechtigung nicht</td>
+<td>403</td>
+</tr>
+<tr>
+<td>471</td>
+<td>Property cannot be written due to permission policy restrictions</td>
+<td>Parameter kann nicht geschrieben werden auf grund von eingeschränkter Richtlinie</td>
+<td>403</td>
+</tr>
+<tr>
+<td>472</td>
+<td>Error while processing asset file</td>
+<td>Fehler beim bearbeiten der Datei</td>
+<td>400</td>
+</tr>
+<tr>
+<td>473</td>
+<td>Error running template</td>
+<td>Fehler beim Ausführen der Template</td>
+<td>400</td>
+</tr>
+<tr>
+<td>500</td>
+<td>Missing plan for this product</td>
+<td>Fehlender Vertrag für dieses Produkt</td>
+<td>403</td>
+</tr>
+<tr>
+<td>510</td>
+<td>Insufficient plan for this product</td>
+<td>Vertrag umfasst dieses Produkt nicht</td>
+<td>403</td>
+</tr>
+<tr>
+<td>511</td>
+<td>Insufficient plan for creation</td>
+<td>Kann dies im aktuellen Vertrag nicht erstellen</td>
+<td>403</td>
+</tr>
+<tr>
+<td>003</td>
+<td>Service currently unavailable</td>
+<td>undefined</td>
+<td>503</td>
+</tr>
+<tr>
+<td>000</td>
+<td>Internal Error</td>
+<td>undefined</td>
+<td>500</td>
+</tr>
+</tbody>
+</table>
 
   
 </section>

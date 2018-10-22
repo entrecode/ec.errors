@@ -1,6 +1,8 @@
 toc:
   - name: Getting Started
     file: ./README.md
+  - name: Error codes
+    file: ./errorCodes.md
   - name: API Doc
   - newError
   - convertValidationError
