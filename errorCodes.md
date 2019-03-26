@@ -75,5 +75,5 @@
 | 510 | Insufficient plan for this product | Vertrag umfasst dieses Produkt nicht | 403 |
 | 511 | Insufficient plan for creation | Kann dies im aktuellen Vertrag nicht erstellen | 403 |
 | 003 | Service currently unavailable | undefined | 503 |
-| 002 | Bad Gateway | undefined | 502 |
+| 002 | Bad Gateway | undefined | 502 |
 | 000 | Internal Error | undefined | 500 |
