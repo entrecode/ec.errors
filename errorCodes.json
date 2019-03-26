@@ -363,6 +363,10 @@
     "message": "Service currently unavailable",
     "status": 503
   },
+  "002": {
+    "message": "Bad Gateway",
+    "status": 502
+  },
   "000": {
     "message": "Internal Error",
     "status": 500
