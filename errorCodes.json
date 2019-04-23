@@ -254,6 +254,11 @@
     "messageDE": "Ein Asset mit gleichem Dateinamen existiert bereits in dieser AssetGroup. `preserveFilenames` flag entfernen um zufälligen Dateinamen zu verwenden. Kein Asset wurde Hochgeladen",
     "status": 400
   },
+  "377": {
+    "message": "Could not delete entry, linked entry parallel deleted",
+    "messageDE": "Konnte Entry nicht löschen. Verknüpfter Entry parallel gelöscht",
+    "status": 409
+  },
   "400": {
     "message": "Missing Access Token",
     "messageDE": "Fehlender Access Token",
