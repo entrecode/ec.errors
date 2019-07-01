@@ -26,6 +26,7 @@
 | 254 | Exceeded maximum levels for nested request. | undefined | 400 |
 | 255 | Could not get nested resources. | Konnte eingebettete Resource nicht laden | 400 |
 | 256 | Could not create download file. | Konnte Download Datei nicht erstellen | 400 |
+| 257 | Could not load asset by url. | Konnte Asset per url nicht laden. | 400 |
 | 311 | Invalid value for property in JSON body | Fehlerhaftes Wert für Parameter im JSON Body | 400 |
 | 351 | eMail address is unavailable | E-Mail-Adresse nicht verfügbar | 403 |
 | 352 | Cannot delete openID connection | Kann openID Verbindung nicht löschen | 403 |
