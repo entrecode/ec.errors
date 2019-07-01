@@ -119,6 +119,11 @@
     "messageDE": "Konnte Download Datei nicht erstellen",
     "status": 400
   },
+  "257": {
+    "message": "Could not load asset by url.",
+    "messageDE": "Konnte Asset per url nicht laden.",
+    "status": 400
+  },
   "311": {
     "message": "Invalid value for property in JSON body",
     "messageDE": "Fehlerhaftes Wert für Parameter im JSON Body",
