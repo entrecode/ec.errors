@@ -80,15 +80,21 @@ function mapTV4Error(error) {
 function convertValidationError(tv4Result) {
   let j;
   const error = [];
-  for (j = 0; j < tv4Result.errors.length; j += 1) {
-    error.push(mapTV4Error(tv4Result.errors[j]));
+  if (tv4Result.errors) {
+    for (j = 0; j < tv4Result.errors.length; j += 1) {
+      error.push(mapTV4Error(tv4Result.errors[j]));
+    }
+  } else {
+    error.push(tv4Result);
   }
 
   if (!config.convertValidationErrorAsArray) {
     const mainError = error.shift();
-    Object.assign(mainError, {
-      subErrors: error,
-    });
+    if (error.length) {
+      Object.assign(mainError, {
+        subErrors: error,
+      });
+    }
     return mainError;
   }
 
