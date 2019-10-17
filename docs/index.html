@@ -1,20 +1,21 @@
 <!doctype html>
 <html>
 <head>
-  <meta charset='utf-8' />
-  <title>ec.errors 0.2.4 | Documentation</title>
+  <meta charset='utf-8'>
+  <title>ec.errors 0.2.8 | Documentation</title>
+  <meta name='description' content='Module for error codes used by all entrecode products. By entrecode.'>
   <meta name='viewport' content='width=device-width,initial-scale=1'>
-  <link href='assets/bass.css' type='text/css' rel='stylesheet' />
-  <link href='assets/style.css' type='text/css' rel='stylesheet' />
-  <link href='assets/github.css' type='text/css' rel='stylesheet' />
-  <link href='assets/split.css' type='text/css' rel='stylesheet' />
+  <link href='assets/bass.css' rel='stylesheet'>
+  <link href='assets/style.css' rel='stylesheet'>
+  <link href='assets/github.css' rel='stylesheet'>
+  <link href='assets/split.css' rel='stylesheet'>
 </head>
 <body class='documentation m0'>
     <div class='flex'>
       <div id='split-left' class='overflow-auto fs0 height-viewport-100'>
         <div class='py1 px2'>
           <h3 class='mb0 no-anchor'>ec.errors</h3>
-          <div class='mb1'><code>0.2.4</code></div>
+          <div class='mb1'><code>0.2.8</code></div>
           <input
             placeholder='Filter'
             id='filter-input'
@@ -96,7 +97,7 @@
             </ul>
           </div>
           <div class='mt1 h6 quiet'>
-            <a href='http://documentation.js.org/reading-documentation.html'>Need help reading this?</a>
+            <a href='https://documentation.js.org/reading-documentation.html'>Need help reading this?</a>
           </div>
         </div>
       </div>
@@ -162,8 +163,7 @@ myFunction(<span class="hljs-string">'invalid'</span>);</pre>
 </ul>
 
   
-</section>
-</div>
+</section></div>
           
         
           
@@ -330,6 +330,12 @@ myFunction(<span class="hljs-string">'invalid'</span>);</pre>
 <td>400</td>
 </tr>
 <tr>
+<td>257</td>
+<td>Could not load asset by url.</td>
+<td>Konnte Asset per url nicht laden.</td>
+<td>400</td>
+</tr>
+<tr>
 <td>311</td>
 <td>Invalid value for property in JSON body</td>
 <td>Fehlerhaftes Wert für Parameter im JSON Body</td>
@@ -481,23 +487,21 @@ myFunction(<span class="hljs-string">'invalid'</span>);</pre>
 </tr>
 <tr>
 <td>375</td>
-<td>A duplicate asset already exists in this AssetGroup. Set 
-<code>ignoreDuplicates</code>
- flag to ignore. No assets were uploaded.</td>
-<td>Ein gleiches Asset existiert bereits in dieser AssetGroup. Zum Ignorieren 
-<code>ignoreDuplicates</code>
- flag setzten. Kein Asset wurde Hochgeladen</td>
+<td>A duplicate asset already exists in this AssetGroup. Set <code>ignoreDuplicates</code> flag to ignore. No assets were uploaded.</td>
+<td>Ein gleiches Asset existiert bereits in dieser AssetGroup. Zum Ignorieren <code>ignoreDuplicates</code> flag setzten. Kein Asset wurde Hochgeladen</td>
 <td>400</td>
 </tr>
 <tr>
 <td>376</td>
-<td>A duplicate asset filename already exists in this AssetGroup. Remove 
-<code>preserveFilenames</code>
- flag to use a random filename. No assets were uploaded.</td>
-<td>Ein Asset mit gleichem Dateinamen existiert bereits in dieser AssetGroup. 
-<code>preserveFilenames</code>
- flag entfernen um zufälligen Dateinamen zu verwenden. Kein Asset wurde Hochgeladen</td>
+<td>A duplicate asset filename already exists in this AssetGroup. Remove <code>preserveFilenames</code> flag to use a random filename. No assets were uploaded.</td>
+<td>Ein Asset mit gleichem Dateinamen existiert bereits in dieser AssetGroup. <code>preserveFilenames</code> flag entfernen um zufälligen Dateinamen zu verwenden. Kein Asset wurde Hochgeladen</td>
 <td>400</td>
+</tr>
+<tr>
+<td>377</td>
+<td>Could not delete entry, linked entry parallel deleted</td>
+<td>Konnte Entry nicht löschen. Verknüpfter Entry parallel gelöscht</td>
+<td>409</td>
 </tr>
 <tr>
 <td>400</td>
@@ -647,8 +651,7 @@ myFunction(<span class="hljs-string">'invalid'</span>);</pre>
 </table>
 
   
-</section>
-</div>
+</section></div>
           
         
           
@@ -662,12 +665,11 @@ myFunction(<span class="hljs-string">'invalid'</span>);</pre>
     
 
   
-</section>
-</div>
+</section></div>
           
         
           
-            <section class='p2 mb2 clearfix bg-white minishadow'>
+          <section class='p2 mb2 clearfix bg-white minishadow'>
 
   
   <div class='clearfix'>
@@ -682,8 +684,7 @@ myFunction(<span class="hljs-string">'invalid'</span>);</pre>
 
   <p>Helper Function to produce an error object containing message and HTTP status code.</p>
 
-
-  <div class='pre p1 fill-light mt0'>newError(code: (int | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>?), detail: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>?, verbose: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>?): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Error">Error</a></div>
+    <div class='pre p1 fill-light mt0'>newError(code: (int | <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>?), detail: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>?, verbose: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>?): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Error">Error</a></div>
   
   
 
@@ -753,12 +754,14 @@ Can also be an integer (when not 000…).
   
 
   
+
+  
 </section>
 
           
         
           
-            <section class='p2 mb2 clearfix bg-white minishadow'>
+          <section class='p2 mb2 clearfix bg-white minishadow'>
 
   
   <div class='clearfix'>
@@ -773,8 +776,7 @@ Can also be an integer (when not 000…).
 
   <p>Converts an Error of tini validator into entrecode error format.</p>
 
-
-  <div class='pre p1 fill-light mt0'>convertValidationError(tv4Result: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Error">Error</a></div>
+    <div class='pre p1 fill-light mt0'>convertValidationError(tv4Result: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">object</a>): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Error">Error</a></div>
   
   
 
@@ -822,12 +824,14 @@ Can also be an integer (when not 000…).
   
 
   
+
+  
 </section>
 
           
         
           
-            <section class='p2 mb2 clearfix bg-white minishadow'>
+          <section class='p2 mb2 clearfix bg-white minishadow'>
 
   
   <div class='clearfix'>
@@ -842,8 +846,7 @@ Can also be an integer (when not 000…).
 
   <p>Create a localized version of any given entrecode error.</p>
 
-
-  <div class='pre p1 fill-light mt0'>getLocalised(error: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Error">Error</a>, locale: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>?): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Error">Error</a></div>
+    <div class='pre p1 fill-light mt0'>getLocalised(error: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Error">Error</a>, locale: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>?): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Error">Error</a></div>
   
   
 
@@ -902,6 +905,8 @@ Leave blank for english.
   
 
   
+
+  
 </section>
 
           
@@ -917,8 +922,7 @@ Leave blank for english.
     <p><a href="https://entrecode.de/datenschutz">Impressum &#x26; Datenschutz (Privacy)</a></p>
 
   
-</section>
-</div>
+</section></div>
           
         
       </div>

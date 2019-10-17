@@ -54,7 +54,7 @@
 | 374 | Cannot export datamanager. Required field in model has no default value. | Kann DataManager nicht exportieren. Erforderliches Feld in Model hat keinen Standartwert | 400 |
 | 375 | A duplicate asset already exists in this AssetGroup. Set `ignoreDuplicates` flag to ignore. No assets were uploaded. | Ein gleiches Asset existiert bereits in dieser AssetGroup. Zum Ignorieren `ignoreDuplicates` flag setzten. Kein Asset wurde Hochgeladen | 400 |
 | 376 | A duplicate asset filename already exists in this AssetGroup. Remove `preserveFilenames` flag to use a random filename. No assets were uploaded. | Ein Asset mit gleichem Dateinamen existiert bereits in dieser AssetGroup. `preserveFilenames` flag entfernen um zufälligen Dateinamen zu verwenden. Kein Asset wurde Hochgeladen | 400 |
-| 377 | Could not delete entry, linked entry parallel deleted. | Konnte Entry nicht löschen. Verknüpfter Entry parallel gelöscht | 409 |
+| 377 | Could not delete entry, linked entry parallel deleted | Konnte Entry nicht löschen. Verknüpfter Entry parallel gelöscht | 409 |
 | 400 | Missing Access Token | Fehlender Access Token | 401 |
 | 401 | Invalid Access Token | Fehlerhafter Access Token | 401 |
 | 402 | Outdated Access Token | Access Token abgelaufen | 401 |

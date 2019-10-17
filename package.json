@@ -1,6 +1,6 @@
 {
   "name": "ec.errors",
-  "version": "0.2.7",
+  "version": "0.2.8",
   "description": "Module for error codes used by all entrecode products. By entrecode.",
   "main": "index.js",
   "types": "./index.d.ts",
