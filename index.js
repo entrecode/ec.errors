@@ -42,7 +42,7 @@ function mapTV4Error(error) {
     return newError(
       201,
       `${error.dataPath}/${error.message.replace(/^Missing required property: /, '')}`,
-      error.message,
+      error.message
     );
   }
   if (
