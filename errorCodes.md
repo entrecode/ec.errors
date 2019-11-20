@@ -69,6 +69,7 @@
 | 460 | Generic OAuth Error | Allgemeint OAuth Fehler | 400 |
 | 461 | Facebook OAuth Request failed | Facebook OAuth fehlgeschlagen | 400 |
 | 462 | Facebook API call failed to receive eMail address | Facebook Request konnte E-Mail-Adresse nicht laden | 400 |
+| 465 | OAuth Error | OAuth Error | 400 |
 | 470 | Target resource does not fulfill permission policy conditions | Resource erfüllt Bedingung für Berechtigung nicht | 403 |
 | 471 | Property cannot be written due to permission policy restrictions | Parameter kann nicht geschrieben werden auf grund von eingeschränkter Richtlinie | 403 |
 | 472 | Error while processing asset file | Fehler beim bearbeiten der Datei | 400 |
