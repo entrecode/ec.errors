@@ -334,6 +334,11 @@
     "messageDE": "Facebook Request konnte E-Mail-Adresse nicht laden",
     "status": 400
   },
+  "465": {
+    "message": "OAuth Error",
+    "messageDE": "OAuth Error",
+    "status": 400
+  },
   "470": {
     "message": "Target resource does not fulfill permission policy conditions",
     "messageDE": "Resource erfüllt Bedingung für Berechtigung nicht",
