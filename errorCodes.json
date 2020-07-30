@@ -201,7 +201,7 @@
   },
   "365": {
     "message": "Cannot change Model, duplicate model title.",
-    "messageDE": "Kann Model nicht ändern. Doppelter Model name",
+    "messageDE": "Kann Model nicht ändern. Doppelter Modelname",
     "status": 400
   },
   "366": {
