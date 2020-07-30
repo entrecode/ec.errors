@@ -321,7 +321,7 @@
   },
   "460": {
     "message": "Generic OAuth Error",
-    "messageDE": "Allgemeint OAuth Fehler",
+    "messageDE": "Allgemeiner OAuth Fehler",
     "status": 400
   },
   "461": {
