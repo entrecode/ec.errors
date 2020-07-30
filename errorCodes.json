@@ -91,7 +91,7 @@
   },
   "251": {
     "message": "Password is too short (min. 4 characters)",
-    "messageDE": "Passwort zu kurt (min. 4 Zeichen)",
+    "messageDE": "Passwort zu kurz (min. 4 Zeichen)",
     "status": 400
   },
   "252": {
