@@ -64,8 +64,10 @@
 | 411 | Insufficient rights to access the requested resource with this method | Keine Berechtigung die angeforderte Resource mit dieser Methode zu laden | 405 |
 | 444 | Denied because of stupidity | http://www.nichtlustig.de/toondb/040816.html | 403 |
 | 451 | Too many wrong login attempts, please wait | Zu viele Login-Versuche. Bitte warten | 429 |
-| 452 | User blocked | Benutzer blokiert | 403 |
+| 452 | User blocked | Benutzer blockiert | 403 |
 | 453 | Invalid invite | Fehlerhafte Einladung | 403 |
+| 454 | Not allowed for this Account | Für diesen Account nicht erlaubt | 403 |
+| 455 | Maximum amount reached | Maximale Anzahl erreicht| 403 |
 | 460 | Generic OAuth Error | Allgemeint OAuth Fehler | 400 |
 | 461 | Facebook OAuth Request failed | Facebook OAuth fehlgeschlagen | 400 |
 | 462 | Facebook API call failed to receive eMail address | Facebook Request konnte E-Mail-Adresse nicht laden | 400 |
