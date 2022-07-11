@@ -311,12 +311,22 @@
   },
   "452": {
     "message": "User blocked",
-    "messageDE": "Benutzer blokiert",
+    "messageDE": "Benutzer blockiert",
     "status": 403
   },
   "453": {
     "message": "Invalid invite",
     "messageDE": "Fehlerhafte Einladung",
+    "status": 403
+  },
+  "454": {
+    "message": "Not allowed for this Account",
+    "messageDE": "Für diesen Account nicht erlaubt",
+    "status": 403
+  },
+  "455": {
+    "message": "Maximum amount reached",
+    "messageDE": "Maximale Anzahl erreicht",
     "status": 403
   },
   "460": {
