@@ -22,10 +22,10 @@
   "homepage": "https://github.com/entrecode/ec.errors#readme",
   "dependencies": {},
   "devDependencies": {
-    "chai": "^4.2.0",
-    "documentation": "^12.1.2",
+    "chai": "^4.3.6",
+    "documentation": "^13.2.5",
     "istanbul": "^0.4.5",
-    "json-schema-remote": "^1.4.2",
-    "mocha": "^6.2.1"
+    "json-schema-remote": "^1.6.2",
+    "mocha": "^10.0.0"
   }
 }
