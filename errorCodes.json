@@ -130,7 +130,7 @@
     "status": 400
   },
   "351": {
-    "message": "eMail address is unavailable",
+    "message": "Email address is unavailable",
     "messageDE": "E-Mail-Adresse nicht verfügbar",
     "status": 403
   },
@@ -329,6 +329,11 @@
     "messageDE": "Maximale Anzahl erreicht",
     "status": 403
   },
+  "456": {
+    "message": "Wrong email in invite",
+    "messageDE": "Falsche E-Mail im Invite",
+    "status": 403
+  },
   "460": {
     "message": "Generic OAuth Error",
     "messageDE": "Allgemeint OAuth Fehler",
@@ -340,7 +345,7 @@
     "status": 400
   },
   "462": {
-    "message": "Facebook API call failed to receive eMail address",
+    "message": "Facebook API call failed to receive email address",
     "messageDE": "Facebook Request konnte E-Mail-Adresse nicht laden",
     "status": 400
   },

@@ -28,7 +28,7 @@
 | 256 | Could not create download file. | Konnte Download Datei nicht erstellen | 400 |
 | 257 | Could not load asset by url. | Konnte Asset per url nicht laden. | 400 |
 | 311 | Invalid value for property in JSON body | Fehlerhaftes Wert für Parameter im JSON Body | 400 |
-| 351 | eMail address is unavailable | E-Mail-Adresse nicht verfügbar | 403 |
+| 351 | Email address is unavailable | E-Mail-Adresse nicht verfügbar | 403 |
 | 352 | Cannot delete openID connection | Kann openID Verbindung nicht löschen | 403 |
 | 353 | Duplicate model/assetgroup in same data manager | Doppeltes Model/doppelte Asset Group im gleichen DataManager | 403 |
 | 354 | Cannot delete model, has entries | Kann Model nicht löschen, hat Entries | 403 |
@@ -66,11 +66,12 @@
 | 451 | Too many wrong login attempts, please wait | Zu viele Login-Versuche. Bitte warten | 429 |
 | 452 | User blocked | Benutzer blockiert | 403 |
 | 453 | Invalid invite | Fehlerhafte Einladung | 403 |
-| 454 | Not allowed for this Account | Für diesen Account nicht erlaubt | 403 |
-| 455 | Maximum amount reached | Maximale Anzahl erreicht| 403 |
+| 454 | Not allowed for this Account | Für diesen Account nicht erlaubt | 403 |
+| 455 | Maximum amount reached | Maximale Anzahl erreicht | 403 |
+| 456 | Wrong email in invite | Falsche E-Mail im Invite | 403 |
 | 460 | Generic OAuth Error | Allgemeint OAuth Fehler | 400 |
 | 461 | Facebook OAuth Request failed | Facebook OAuth fehlgeschlagen | 400 |
-| 462 | Facebook API call failed to receive eMail address | Facebook Request konnte E-Mail-Adresse nicht laden | 400 |
+| 462 | Facebook API call failed to receive email address | Facebook Request konnte E-Mail-Adresse nicht laden | 400 |
 | 465 | OAuth Error | OAuth Error | 400 |
 | 470 | Target resource does not fulfill permission policy conditions | Resource erfüllt Bedingung für Berechtigung nicht | 403 |
 | 471 | Property cannot be written due to permission policy restrictions | Parameter kann nicht geschrieben werden auf grund von eingeschränkter Richtlinie | 403 |
