@@ -329,6 +329,11 @@
     "messageDE": "Maximale Anzahl erreicht",
     "status": 403
   },
+  "456": {
+    "message": "Wrong email in invite",
+    "messageDE": "Falsche E-Mail im Invite",
+    "status": 403
+  },
   "460": {
     "message": "Generic OAuth Error",
     "messageDE": "Allgemeint OAuth Fehler",
