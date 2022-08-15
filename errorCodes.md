@@ -69,6 +69,7 @@
 | 454 | Not allowed for this Account | Für diesen Account nicht erlaubt | 403 |
 | 455 | Maximum amount reached | Maximale Anzahl erreicht | 403 |
 | 456 | Wrong email in invite | Falsche E-Mail im Invite | 403 |
+| 457 | Invite expired | Einladung abgelaufen | 403 |
 | 460 | Generic OAuth Error | Allgemeint OAuth Fehler | 400 |
 | 461 | Facebook OAuth Request failed | Facebook OAuth fehlgeschlagen | 400 |
 | 462 | Facebook API call failed to receive email address | Facebook Request konnte E-Mail-Adresse nicht laden | 400 |

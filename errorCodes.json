@@ -334,6 +334,11 @@
     "messageDE": "Falsche E-Mail im Invite",
     "status": 403
   },
+  "457": {
+    "message": "Invite expired",
+    "messageDE": "Einladung abgelaufen",
+    "status": 403
+  },
   "460": {
     "message": "Generic OAuth Error",
     "messageDE": "Allgemeint OAuth Fehler",
