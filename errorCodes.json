@@ -91,7 +91,7 @@
   },
   "251": {
     "message": "Password is too short (min. 4 characters)",
-    "messageDE": "Passwort zu kurt (min. 4 Zeichen)",
+    "messageDE": "Passwort zu kurz (min. 4 Zeichen)",
     "status": 400
   },
   "252": {
@@ -201,7 +201,7 @@
   },
   "365": {
     "message": "Cannot change Model, duplicate model title.",
-    "messageDE": "Kann Model nicht ändern. Doppelter Model name",
+    "messageDE": "Kann Model nicht ändern. Doppelter Modelname",
     "status": 400
   },
   "366": {
@@ -341,7 +341,7 @@
   },
   "460": {
     "message": "Generic OAuth Error",
-    "messageDE": "Allgemeint OAuth Fehler",
+    "messageDE": "Allgemeiner OAuth Fehler",
     "status": 400
   },
   "461": {
