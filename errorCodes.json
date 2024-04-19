@@ -379,6 +379,11 @@
     "messageDE": "Fehler beim Ausführen der Template",
     "status": 400
   },
+  "474": {
+    "message": "Implicit permission cannot be edited",
+    "messageDE": "Implizite Berechtigung kann nicht bearbeitet werden",
+    "status": 403
+  },
   "500": {
     "message": "Missing plan for this product",
     "messageDE": "Fehlender Vertrag für dieses Produkt",

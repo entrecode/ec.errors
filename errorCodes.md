@@ -78,6 +78,7 @@
 | 471 | Property cannot be written due to permission policy restrictions | Parameter kann nicht geschrieben werden auf grund von eingeschränkter Richtlinie | 403 |
 | 472 | Error while processing asset file | Fehler beim bearbeiten der Datei | 400 |
 | 473 | Error running template | Fehler beim Ausführen der Template | 400 |
+| 474 | Implicit permission cannot be edited | Implizite Berechtigung kann nicht bearbeitet werden | 403 |
 | 500 | Missing plan for this product | Fehlender Vertrag für dieses Produkt | 403 |
 | 510 | Insufficient plan for this product | Vertrag umfasst dieses Produkt nicht | 403 |
 | 511 | Insufficient plan for creation | Kann dies im aktuellen Vertrag nicht erstellen | 403 |
