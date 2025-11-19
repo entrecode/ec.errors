@@ -109,7 +109,7 @@ describe('getLocalized', () => {
     expect(error.code).to.match(/^\d100$/);
     expect(error.message).to.equal('Resource not found');
 
-    const errorDE = util.getLocalised(error, 'de');
+    const errorDE = util.getLocalized(error, 'de');
     expect(errorDE.message).to.equal('Resource nicht gefunden');
   });
   it('should get en version of error', () => {
@@ -119,14 +119,14 @@ describe('getLocalized', () => {
     expect(error.code).to.match(/^\d100$/);
     expect(error.message).to.equal('Resource not found');
 
-    const errorEN = util.getLocalised(error);
+    const errorEN = util.getLocalized(error);
     expect(errorEN.message).to.equal('Resource not found');
   });
   it('should get de version of error and subErrors', () => {
     const error = util.newError(100);
     error.subErrors = [error];
 
-    const errorDE = util.getLocalised(error, 'DE');
+    const errorDE = util.getLocalized(error, 'DE');
     expect(errorDE.message).to.equal('Resource nicht gefunden');
     expect(errorDE.subErrors[0].message).to.equal('Resource nicht gefunden');
   });
@@ -138,5 +138,8 @@ describe('getLocalized', () => {
     const errorDE = util.getLocalised(error, 'DE');
     expect(errorDE.message).to.equal('Service currently unavailable');
     expect(errorDE.subErrors[0].message).to.equal('Service currently unavailable');
+  });
+  it('should support british english method name', () => {
+    expect(util.getLocalised).to.equal(util.getLocalized);
   });
 });

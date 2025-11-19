@@ -109,7 +109,7 @@ function convertValidationError(tv4Result) {
  *   Leave blank for english.
  * @returns {Error} localized entrecode error.
  */
-function getLocalised(error, locale = config.locale) {
+function getLocalized(error, locale = config.locale) {
   let code3 = `${error.code % 1000}`;
   while (code3.length < 3) {
     code3 = `0${code3}`;
@@ -141,6 +141,7 @@ module.exports = (cfg) => {
   return {
     newError,
     convertValidationError,
-    getLocalised,
+    getLocalized,
+    getLocalised: getLocalized,
   };
 };

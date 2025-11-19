@@ -6,6 +6,6 @@ toc:
   - name: API Doc
   - newError
   - convertValidationError
-  - getLocalised
+  - getLocalized
   - name: Impressum & Datenschutz
     file: ./privacy.md

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset='utf-8'>
-  <title>ec.errors 0.2.12 | Documentation</title>
+  <title>ec.errors 0.2.13 | Documentation</title>
   <meta name='description' content='Module for error codes used by all entrecode products. By entrecode.'>
   <meta name='viewport' content='width=device-width,initial-scale=1'>
   <link href='assets/bass.css' rel='stylesheet'>
@@ -15,7 +15,7 @@
       <div id='split-left' class='overflow-auto fs0 height-viewport-100'>
         <div class='py1 px2'>
           <h3 class='mb0 no-anchor'>ec.errors</h3>
-          <div class='mb1'><code>0.2.12</code></div>
+          <div class='mb1'><code>0.2.13</code></div>
           <input
             placeholder='Filter'
             id='filter-input'
@@ -79,9 +79,9 @@
               
                 
                 <li><a
-                  href='#getlocalised'
+                  href='#getlocalized'
                   class="">
-                  getLocalised
+                  getLocalized
                   
                 </a>
                 
@@ -573,6 +573,12 @@
 <td>403</td>
 </tr>
 <tr>
+<td>457</td>
+<td>Invite expired</td>
+<td>Einladung abgelaufen</td>
+<td>403</td>
+</tr>
+<tr>
 <td>460</td>
 <td>Generic OAuth Error</td>
 <td>Allgemeint OAuth Fehler</td>
@@ -848,8 +854,8 @@ Can also be an integer (when not 000…).
   
   <div class='clearfix'>
     
-    <h3 class='fl m0' id='getlocalised'>
-      getLocalised
+    <h3 class='fl m0' id='getlocalized'>
+      getLocalized
     </h3>
     
     
@@ -858,7 +864,7 @@ Can also be an integer (when not 000…).
 
   <p>Create a localized version of any given entrecode error.</p>
 
-    <div class='pre p1 fill-light mt0'>getLocalised(error: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Error">Error</a>, locale: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>?): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Error">Error</a></div>
+    <div class='pre p1 fill-light mt0'>getLocalized(error: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Error">Error</a>, locale: <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/String">string</a>?): <a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Error">Error</a></div>
   
   
 
